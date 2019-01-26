@@ -103,10 +103,10 @@ textarea {
    ========================================================================== */
 
 /* Links */
-   a { color: #00e; }
-   a:visited { color: #551a8b; }
-   a:hover { color: #06e; }
-   a:focus { outline: thin dotted; }
+   a { color: #e4a100; text-decoration:none; }
+   a:visited { color: #e4a100; }
+   a:hover { color: #feb300; border-bottom: dotted 1px #b0d9d8; }
+   a:focus { color: #b0d9d8; }
 
 
    html { background: #011c1b url(/img/interface/body-bg.png) left top repeat; }
@@ -116,6 +116,21 @@ textarea {
    h1 { text-shadow: 0px 0px 10px #000000; font-size: 2em; }
    h2 { font-size: 4em; }
    em{ font-style: normal; color: #feb300; }
+
+
+  header nav {
+    display: flex;
+  }
+
+  header section {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+  }
+
+  header h1 {
+    justify-content: flex-end;
+  }
 
    header { border-top: solid 1px transparent; }
    header h1{ margin: 54px 0; text-align: right; }

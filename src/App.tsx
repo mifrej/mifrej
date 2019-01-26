@@ -9,32 +9,25 @@ function App() {
   return (
     <Root>
       <header>
-        <h1>
-          <Link to="/">
-            {`mifrej { `}
-            <em>craft</em>:
-            <em> frontend-engineer</em>
-            {`; }`}
-          </Link>
-        </h1>
+        <section>
+          <p>
+            <img src="/img/editorial/milosz-s-head.png" width="140" height="" alt="Miłosz's Face" />
+          </p>
+          <h1>
+            <Link to="/">
+              {`mifrej { `}
+              <em>craft</em>:
+              <em> frontend-engineer</em>
+              {`; }`}
+            </Link>
+          </h1>
+        </section>
         <nav>
-          <div className="mainDial naviDial">
-            <div className="mD-hd nD-hd">
-              <div className="mD-hdc nD-hdc"></div>
-            </div>
-            <div className="mD-bd nD-bd">
-              <div className="mD-c nD-c">
-                <div className="mD-s nD-s clearfix">
-                  <Link to="/">Home</Link>
-                  <Link to="/about">About</Link>
-                  <Link to="/blog">Blog</Link>
-                </div>
-              </div>
-            </div>
-            <div className="mD-ft nD-ft">
-              <div className="mD-ftc nD-ftc"></div>
-            </div>
-          </div>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+          </ul>
         </nav>
       </header>
       <div className="mainContent">
