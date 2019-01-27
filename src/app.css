@@ -1,21 +1,22 @@
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+html {
+  color: #222;
+  font-size: 16px;
+  line-height: 1.2;
+  background: #011c1b url(/img/interface/body-bg.png) left top repeat;
 }
 
 /*
@@ -29,13 +30,13 @@
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -43,12 +44,12 @@
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -63,7 +64,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -71,9 +72,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -81,7 +82,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -89,78 +90,190 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-
-
-
- /* ==========================================================================
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 /* Links */
-   a { color: #e4a100; text-decoration:none; }
-   a:visited { color: #e4a100; }
-   a:hover { color: #feb300; border-bottom: dotted 1px #b0d9d8; }
-   a:focus { color: #b0d9d8; }
+a {
+  color: #e4a100;
+  text-decoration: none;
+}
 
+a:hover {
+  color: #feb300;
+  border-bottom: dotted 1px #b0d9d8;
+}
 
-   html { background: #011c1b url(/img/interface/body-bg.png) left top repeat; }
-   body { color: #b0d9d8; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; background:url(/img/interface/header-light.jpg) center top no-repeat; }
-   p { font-size: 1.5em; line-height: 1.6em; margin: 0 0 16px 0; }
-   h1, h2, h3, h4, h5, h6 { color: #e0e7e7; font-weight: normal; font-family: 'Ubuntu', sans-serif; /* font-family: 'Ubuntu Condensed', sans-serif; */}
-   h1 { text-shadow: 0px 0px 10px #000000; font-size: 2em; }
-   h2 { font-size: 4em; }
-   em{ font-style: normal; color: #feb300; }
+a:focus {
+  color: #b0d9d8;
+}
 
+body {
+  color: #b0d9d8;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  background: url(/img/interface/header-light.jpg) center top no-repeat;
+}
 
-  header nav {
-    display: flex;
-  }
+p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin: 0 0 16px 0;
+}
 
-  header section {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: #e0e7e7;
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif; /* font-family: 'Ubuntu Condensed', sans-serif; */
+}
+
+h1 {
+  text-shadow: 0 0 10px #000;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+em {
+  font-style: normal;
+  color: #feb300;
+}
+
+header {
+  padding: 0 2em 2em;
+  border-top: solid 1px transparent;
+
+  & section {
     display: flex;
     flex-flow: row;
     width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    & h1 {
+      margin: 2em 0;
+
+      & a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
+    & p {
+      margin: 0;
+    }
   }
 
-  header h1 {
-    justify-content: flex-end;
+  & nav {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #001413;
+    border-width: 1px 0;
+
+    & ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+
+      & li {
+        padding: 0 16px;
+        color: #536d7f;
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0;
+
+        &::before {
+          content: '# ';
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        & h2 {
+          display: inline-flex;
+          font-size: 1em;
+          margin: 0;
+
+          & a {
+            text-transform: lower-case;
+            padding: 0.3em 0;
+          }
+        }
+      }
+    }
   }
+}
 
-   header { border-top: solid 1px transparent; }
-   header h1{ margin: 54px 0; text-align: right; }
-   header h1 a, header h1 a:visited {text-decoration:none;color:#fff;}
-   header h1 a em { color: #feb300; }
+/* Main boxes */
+.mainDial {
+  margin: 0 auto 14px auto;
+  min-width: 20em;
+  clear: both;
+}
 
-   .mainContent{  }
+.mD-hdc,
+.mD-ftc {
+  font-size: 1px;
+  height: 2px;
+}
 
+.mD-hd,
+.mD-hdc,
+.mD-ft,
+.mD-ftc,
+.greyD-s {
+  background: transparent url(/img/interface/box_corners_bg.png) no-repeat 0 0;
+}
 
-   /* Main boxes */
-   .mainDial { margin: 0 auto 14px auto; min-width:20em; clear: both; }
-   .mD-hdc, .mD-ftc { font-size: 1px; height: 2px; }
-   .mD-hd, .mD-hdc, .mD-ft, .mD-ftc, .greyD-s{ background:transparent urlc/img/interface/box_corners_bg.png) no-repeat 0 0; }
-   .mD-hd { margin-right:45px; clear: both; }
-   .mD-ft { margin-right: 247px; background-position: left -8px; clear: both; }
-   .mD-ftc { margin-right: -247px; background-position: right -21px; height: 10px; }
-   .mD-hdc { background-position: right -4px; margin-right: -45px; }
-   .mD-bd { clear: both; }
-   .mD-c { clear: both; }
-   .mD-s { background: url(/img/interface/menu-box-shine.png) center top no-repeat; padding: 10px 10px 5px 10px; clear: both; }
+.mD-hd {
+  margin-right: 45px;
+  clear: both;
+}
 
+.mD-ft {
+  margin-right: 247px;
+  background-position: left -8px;
+  clear: both;
+}
 
-   header .moduletable_menu { float: left; }
-   .moduletable_menu .menu { margin: 0 0 0 17px; }
-   .moduletable_menu .menu li{ float: left; font-size: 2em; padding: 0 16px; color: #536d7f; font-weight: bold;  margin: 0 0 9px 0; }
-   .moduletable_menu .menu li:before { content: "# "; font-family: Arial, Helvetica, sans-serif; font-size: 0.8em; }
-   .moduletable_menu .menu li a { color: #feb300; text-decoration: none; font-weight: normal; text-transform: lowercase; }
-   .moduletable_menu .menu  li.current a { color: #e0e7e7; }
+.mD-ftc {
+  margin-right: -247px;
+  background-position: right -21px;
+  height: 10px;
+}
 
- /* ==========================================================================
+.mD-hdc {
+  background-position: right -4px;
+  margin-right: -45px;
+}
+
+.mD-bd {
+  clear: both;
+}
+
+.mD-c {
+  clear: both;
+}
+
+.mD-s {
+  background: url(/img/interface/menu-box-shine.png) center top no-repeat;
+  padding: 10px 10px 5px 10px;
+  clear: both;
+}
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -168,7 +281,7 @@ textarea {
  * Hide visually and from screen readers
  */
 
- .hidden {
+.hidden {
   display: none !important;
 }
 
@@ -230,16 +343,15 @@ textarea {
 *    `:before` to contain the top-margins of child elements.
 */
 
-.clearfix:before,
-.clearfix:after {
-  content: " "; /* 1 */
+.clearfix::before,
+.clearfix::after {
+  content: ' '; /* 1 */
   display: table; /* 2 */
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
 }
-
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -247,17 +359,16 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
-
 
 /* ==========================================================================
    Print styles.
@@ -265,72 +376,73 @@ textarea {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]::after {
+    content: ' (' attr(href) ')';
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
+  }
 
-    /*
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    /*
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }

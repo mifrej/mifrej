@@ -24,9 +24,8 @@ function App() {
         </section>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
+            <li><h2><Link to="/">Home</Link></h2></li>
+            <li><h2><Link to="/resume">Resume</Link></h2></li>
           </ul>
         </nav>
       </header>
