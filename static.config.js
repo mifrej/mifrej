@@ -1,7 +1,7 @@
-import axios from 'axios'
-import path from 'path'
-import posts from './data.json';
-import React from 'react'
+/* eslint-disable react/jsx-filename-extension */
+import path from 'path';
+import React from 'react';
+import experiences from './data.json';
 import { Html, Head, Body, children, siteData, renderMeta } from 'react-static';
 
 export default {
@@ -10,7 +10,11 @@ export default {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic|Ubuntu+Condensed&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link
+          href="http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic|Ubuntu+Condensed&amp;subset=latin,latin-ext"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
       <Body>{children}</Body>
     </Html>
@@ -26,19 +30,22 @@ export default {
 
     return [
       {
-        path: '/blog',
+        path: '/resume',
         getData: () => ({
-          posts,
+          experiences,
         }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: 'src/containers/Post',
+        children: experiences.map(experience => ({
+          path: `/experiences/${experience.id}`,
+          component: 'src/containers/Experience',
           getData: () => ({
-            post,
+            experience,
           }),
         })),
       },
-    ]
+    ];
   },
-  plugins: ['react-static-plugin-typescript'],
-}
+  plugins: [
+    'react-static-plugin-typescript',
+    'react-static-plugin-postcss-preset-env',
+  ],
+};
