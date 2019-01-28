@@ -10,6 +10,8 @@ header {
     margin-bottom: 1em;
 
     & h1 {
+      font-size: 1.8em;
+
       @media (--desktop) {
         margin: 2em 0;
       }
@@ -24,6 +26,10 @@ header {
           @media (--tablet) {
             display: inline-flex;
             margin-left: 1em;
+          }
+
+          & .css-prop-name {
+            color: var(--light-green);
           }
         }
 
@@ -40,7 +46,6 @@ header {
     justify-content: center;
     border-top: 1px solid #001413;
     border-bottom: 1px solid #0e5856;
-    border-width: 1px 0;
 
     & ul {
       list-style: none;
@@ -50,11 +55,10 @@ header {
       width: 100%;
       border-bottom: 1px solid #001413;
       border-top: 1px solid #0e5856;
-      border-width: 1px 0;
 
       & li {
         padding: 0 16px;
-        color: #536d7f;
+        color: var(--grey);
         font-size: 2em;
         font-weight: bold;
         margin: 0;
@@ -62,6 +66,7 @@ header {
         &::before {
           content: '# ';
           font-family: Arial, Helvetica, sans-serif;
+          text-shadow: var(--text-shadow-thinner);
         }
 
         & h2 {

@@ -6,4 +6,8 @@
 
 :root {
   --dark-green: #011c1b;
+  --light-green: #abf79b;
+  --grey: #7490a4;
+  --text-shadow-default: 0 0 6px rgba(0, 0, 0, 1);
+  --text-shadow-thinner: 0 0 3px rgba(0, 0, 0, 1);
 }

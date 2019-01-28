@@ -3,14 +3,16 @@ import { Root, Routes } from 'react-static'
 import 'normalize.css';
 import './app.css'
 import Header from './components/Header/Header';
+import './helpers.css';
+import './print.css';
 
 function App() {
   return (
     <Root>
       <Header />
-      <div className="mainContent">
+      <main>
         <Routes />
-      </div>
+      </main>
     </Root>
   )
 }

@@ -12,7 +12,7 @@ export default function Header() {
             <MiloszFaceSvg />
             <span>
               {`mifrej {`}
-              &nbsp;<em>craft</em>:&nbsp;
+              &nbsp;<em className="css-prop-name">craft</em>:&nbsp;
               <em>frontend-engineer</em>
               {`; }`}
             </span>
