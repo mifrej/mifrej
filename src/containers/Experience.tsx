@@ -5,7 +5,7 @@ import { Experience } from '../types'
 
 export default withRouteData(({ experience }: { experience: Experience }) => (
   <div>
-    <Link to="/experiences/">{'<'} Back</Link>
+    <Link to="/career/">{'<'} Back</Link>
     <br />
     <h3>{experience.title}</h3>
     <p>{experience.body}</p>

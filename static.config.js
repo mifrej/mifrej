@@ -30,12 +30,12 @@ export default {
 
     return [
       {
-        path: '/resume',
+        path: '/career',
         getData: () => ({
           experiences,
         }),
         children: experiences.map(experience => ({
-          path: `/experiences/${experience.id}`,
+          path: `/experience/${experience.id}`,
           component: 'src/containers/Experience',
           getData: () => ({
             experience,

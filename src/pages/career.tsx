@@ -8,7 +8,7 @@ export default withRouteData(({ experiences }: { experiences: Experience[] }) =>
     <ul>
       {experiences.map(experience => (
         <li key={experience.id}>
-          <Link to={`/resume/experience/${experience.id}/`}>{experience.title}</Link>
+          <Link to={`/career/experience/${experience.id}/`}>{experience.title}</Link>
         </li>
       ))}
     </ul>
