@@ -1,3 +1,4 @@
 {
+  "plugins": ["universal-import"],
   "presets": ["react-static/babel-preset.js"]
 }

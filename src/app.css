@@ -1,22 +1,10 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+@import './variables.css';
 
 html {
   color: #222;
   font-size: 16px;
   line-height: 1.2;
-  background: #011c1b url(/img/interface/body-bg.png) left top repeat;
+  background: var(--dark-green) url(/img/interface/body-bg.png) left top repeat;
 }
 
 /*
@@ -119,9 +107,16 @@ a:focus {
 body {
   color: #b0d9d8;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-  background: url(/img/interface/header-light.jpg) center top no-repeat;
-  max-width: 90vw;
   margin: 0 auto;
+  max-width: 90vw;
+
+  @media (--desktop) {
+    max-width: 80vw;
+  }
+
+  @media (--large-desktop) {
+    max-width: 70vw;
+  }
 }
 
 p {
@@ -154,63 +149,6 @@ h2 {
 em {
   font-style: normal;
   color: #feb300;
-}
-
-/* Main boxes */
-.mainDial {
-  margin: 0 auto 14px auto;
-  min-width: 20em;
-  clear: both;
-}
-
-.mD-hdc,
-.mD-ftc {
-  font-size: 1px;
-  height: 2px;
-}
-
-.mD-hd,
-.mD-hdc,
-.mD-ft,
-.mD-ftc,
-.greyD-s {
-  background: transparent url(/img/interface/box_corners_bg.png) no-repeat 0 0;
-}
-
-.mD-hd {
-  margin-right: 45px;
-  clear: both;
-}
-
-.mD-ft {
-  margin-right: 247px;
-  background-position: left -8px;
-  clear: both;
-}
-
-.mD-ftc {
-  margin-right: -247px;
-  background-position: right -21px;
-  height: 10px;
-}
-
-.mD-hdc {
-  background-position: right -4px;
-  margin-right: -45px;
-}
-
-.mD-bd {
-  clear: both;
-}
-
-.mD-c {
-  clear: both;
-}
-
-.mD-s {
-  background: url(/img/interface/menu-box-shine.png) center top no-repeat;
-  padding: 10px 10px 5px 10px;
-  clear: both;
 }
 
 /* ==========================================================================

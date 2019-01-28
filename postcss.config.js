@@ -14,9 +14,9 @@ module.exports = {
       autoprefixer: {
         flexbox: 'no-2009',
       },
-      // importFrom: "frontend/components/postcss_imports.css",
+      importFrom: 'src/variables.css',
       stage: 0,
     }),
-    // require("postcss-reporter")({ clearReportedMessages: true }),
+    require('postcss-reporter')({ clearReportedMessages: true }),
   ],
 };
