@@ -1,5 +1,5 @@
 header {
-  padding: 0 2em 2em;
+  padding: 2em;
   border-top: solid 1px transparent;
 
   & section {
@@ -19,6 +19,10 @@ header {
       & a {
         border-bottom: none;
         color: #fff;
+
+        & svg {
+          width: 4em;
+        }
 
         & span {
           display: none;
@@ -50,6 +54,7 @@ header {
     & ul {
       list-style: none;
       margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -57,14 +62,19 @@ header {
       border-top: 1px solid #0e5856;
 
       & li {
-        padding: 0 16px;
+        padding: 0 0.6em 0 0;
         color: var(--grey);
-        font-size: 2em;
+        font-size: 1.7em;
         font-weight: bold;
         margin: 0;
 
+        &:last-child {
+          padding: 0;
+        }
+
         &::before {
           content: '# ';
+          display: inline-flex;
           font-family: Arial, Helvetica, sans-serif;
           text-shadow: var(--text-shadow-thinner);
         }
@@ -72,6 +82,7 @@ header {
         & h2 {
           display: inline-flex;
           font-size: 1em;
+          padding-left: 0.1em;
           margin: 0;
 
           & a {

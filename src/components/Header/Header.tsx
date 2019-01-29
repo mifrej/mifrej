@@ -23,6 +23,7 @@ export default function Header() {
         <ul>
           <li><h2><Link to="/">Home</Link></h2></li>
           <li><h2><Link to="/career">Career</Link></h2></li>
+          <li><h2><Link to="/contact">Contact</Link></h2></li>
         </ul>
       </nav>
     </header>

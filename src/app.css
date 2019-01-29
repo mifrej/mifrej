@@ -108,7 +108,11 @@ body {
   color: #b0d9d8;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   margin: 0 auto;
-  max-width: 90vw;
+  font-size: 0.8em;
+
+  @media (--tablet) {
+    font-size: 1em;
+  }
 
   @media (--desktop) {
     max-width: 80vw;
@@ -156,6 +160,14 @@ h3 {
 em {
   font-style: normal;
   color: #feb300;
+}
+
+ul {
+  margin: 0 0 1em 0;
+}
+
+li {
+  margin-bottom: 0.5em;
 }
 
 main {

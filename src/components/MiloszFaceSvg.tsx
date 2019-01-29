@@ -5,7 +5,6 @@ const MiloszFaceSvg: React.FC = () => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="120px"
       viewBox="0 0 1800 2350"
       preserveAspectRatio="xMidYMid meet"
     >
