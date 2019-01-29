@@ -22,6 +22,8 @@ header {
 
         & svg {
           width: 4em;
+          -webkit-filter: drop-shadow(var(--text-shadow-thin));
+          filter: drop-shadow(var(--text-shadow-thin));
         }
 
         & span {
