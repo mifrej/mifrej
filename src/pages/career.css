@@ -11,15 +11,15 @@
 }
 
 .vertical-timeline-element-content {
-  background: var(--darker-green);
+  background: var(--green);
   box-shadow: var(--box-shadow-default);
 
   &::before {
-    border-right-color: var(--darker-green);
+    border-right-color: var(--green);
 
     @nest .vertical-timeline--two-columns & {
       @media (--large-desktop) {
-        border-left-color: var(--darker-green);
+        border-left-color: var(--green);
       }
     }
   }
@@ -35,6 +35,6 @@
 
 .vertical-timeline--animate {
   & .vertical-timeline-element-icon.bounce-in {
-    background-color: var(--darker-green);
+    background-color: var(--green);
   }
 }
