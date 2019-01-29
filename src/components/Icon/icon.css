@@ -1,0 +1,7 @@
+@import '../../variables.css';
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  fill: var(--white);
+}
