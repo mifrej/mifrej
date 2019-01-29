@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "@types/react-vertical-timeline-component": "^2.3.0",
     "axios": "^0.18.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.0-alpha.0",
     "react-dom": "^16.8.0-alpha.0",
     "react-hot-loader": "^4.3.12",
-    "react-static": "^6.0.18"
+    "react-static": "^6.0.18",
+    "react-vertical-timeline-component": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^10.12.18",

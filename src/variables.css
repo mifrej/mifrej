@@ -8,8 +8,10 @@
   --dark-green: #011c1b;
   --green: #2b4b49;
   --light-green: #abf79b;
+  --light-teal: #b0d9d8;
   --grey: #7490a4;
   --white: #fff;
   --text-shadow-default: 0 0 6px rgba(0, 0, 0, 1);
   --text-shadow-thinner: 0 0 3px rgba(0, 0, 0, 1);
+  --box-shadow-default: 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
