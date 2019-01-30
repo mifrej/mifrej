@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import Navigation from '@components/Navigation/Navigation';
 import MiloszFaceSvg from '@components/MiloszFaceSvg'
 import './header.css';
 
@@ -19,13 +20,7 @@ export default function Header() {
           </Link>
         </h1>
       </section>
-      <nav>
-        <ul>
-          <li><h2><Link to="/">Home</Link></h2></li>
-          <li><h2><Link to="/career">Career</Link></h2></li>
-          <li><h2><Link to="/contact">Contact</Link></h2></li>
-        </ul>
-      </nav>
+      <Navigation />
     </header>
   )
 }

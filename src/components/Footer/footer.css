@@ -1,2 +1,44 @@
+@import '../../variables.css';
+
 footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+
+  & nav {
+    & li {
+      &::after {
+        content: '|';
+        display: inline-flex;
+        padding-left: 0.5em;
+      }
+
+      &:last-child {
+        &::after {
+          content: '';
+        }
+      }
+    }
+  }
+
+  & a {
+    color: var(--teal);
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      color: var(--light-teal);
+    }
+  }
+
+  & h2 {
+    font-size: 1em;
+    text-shadow: none;
+  }
+
+  & h6 {
+    margin: 0;
+    text-shadow: none;
+    line-break: 1;
+  }
 }
