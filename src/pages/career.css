@@ -1,4 +1,5 @@
 @import '../variables.css';
+@import './timeline-component.css';
 
 .vertical-timeline {
   margin: 0;
@@ -35,6 +36,6 @@
 
 .vertical-timeline--animate {
   & .vertical-timeline-element-icon.bounce-in {
-    background-color: var(--green);
+    background-color: var(--yellow);
   }
 }

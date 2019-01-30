@@ -118,6 +118,10 @@ body {
   @media (--large-desktop) {
     max-width: 70vw;
   }
+
+  @media (--xx-large-desktop) {
+    max-width: 60vw;
+  }
 }
 
 p {
