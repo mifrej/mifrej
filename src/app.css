@@ -125,9 +125,9 @@ body {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.6em;
-  margin: 0 0 16px 0;
+  margin: 0 0 0.8em 0;
   text-shadow: var(--text-shadow-thinner);
   color: var(--light-teal);
 }
@@ -160,6 +160,14 @@ h3 {
   margin-bottom: 0.8em;
 }
 
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
 h4,
 h5,
 h6 {
@@ -177,10 +185,12 @@ em {
 
 ul {
   margin: 0 0 1em 0;
+  padding: 0 0 0 1.5em;
 }
 
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
+  text-shadow: var(--text-shadow-thin);
 }
 
 main {
