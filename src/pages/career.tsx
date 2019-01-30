@@ -12,10 +12,10 @@ export default withSiteData(() => (
         date="08/2017 - present"
         icon={<Icon name="svg-briefcase" />}
       >
-        <h3 className="vertical-timeline-element-title">Frontend Engineer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Berlin, Akelius GmbH</h4>
+        <h3>Frontend Engineer</h3>
+        <h4><span>Akelius GmbH</span> <em>Berlin</em></h4>
         <ul>
-          <li><p>Design and kickstart Single Page Application with React as a core library.</p></li>
+          <li><p>Designed and kickstarted Single Page Application with React for backend API with Apollo client</p></li>
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -23,15 +23,32 @@ export default withSiteData(() => (
         icon={<Icon name="svg-briefcase" />}
         position={"right"}
       >
-        <h3 className="vertical-timeline-element-title">Full Stack Developer (RoR/JavaScript)</h3>
-        <h4 className="vertical-timeline-element-subtitle">Berlin, Sofatutor GmbH</h4>
-        <h5>Independently serving solutions for the top Online Learning Platform in Germany</h5>
+        <h3>Full Stack Developer (RoR/JavaScript)</h3>
+        <h4><span>Sofatutor GmbH</span> <em>Berlin</em></h4>
         <ul>
           <li>
             <p>Built new workflow for Admin Panel to serve as support for Video Production team. That involved developing full CRUD interface in Rails application based on a state machine. Also extending roles on authorisation layer.</p>
           </li>
           <li>
-            <p>Building new Instant Search component supported with Thinking Sphinx as a full text search engine layer, and Backbone as a Single Page Application interface</p>
+            <p>Built new Instant Search component supported with Thinking Sphinx as a full text search engine layer, and Backbone as a Single Page Application interface</p>
+          </li>
+        </ul>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        date="03/2015 - 07/2016"
+        icon={<Icon name="svg-briefcase" />}
+      >
+        <h3>Full Stack Developer (RoR)</h3>
+        <h4><span>Sharepop</span> <em>Berlin</em></h4>
+        <ul>
+          <li>
+            <p>Built greenfield product with one teammate.</p>
+          </li>
+          <li>
+            <p>Designed and lead Frontend architecture and UX.</p>
+          </li>
+          <li>
+            <p>After product stabilisation I developed Full Stack features in RoR</p>
           </li>
         </ul>
       </VerticalTimelineElement>

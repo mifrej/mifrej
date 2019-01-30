@@ -127,6 +127,8 @@
 
 .vertical-timeline-element-content .vertical-timeline-element-date {
   display: inline-block;
+  color: var(--light-green);
+  text-shadow: var(--text-shadow-thinner);
 }
 
 .vertical-timeline-element-content .vertical-timeline-element-date {

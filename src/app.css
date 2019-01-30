@@ -186,6 +186,7 @@ em {
 ul {
   margin: 0 0 1em 0;
   padding: 0 0 0 1.5em;
+  list-style-image: url('/img/interface/bullet.svg');
 }
 
 li {
