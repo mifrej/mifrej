@@ -10,6 +10,15 @@
   & h4 {
     font-size: 1.2em;
     color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+
+    & em {
+      color: var(--light-green);
+      font-size: 0.8em;
+      padding-top: 0.3em;
+      text-shadow: var(--text-shadow-thinner);
+    }
   }
 
   & h5 {

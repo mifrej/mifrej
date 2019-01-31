@@ -12,11 +12,13 @@ export default withSiteData(() => (
         date="08/2017 - present"
         icon={<Icon name="svg-briefcase" />}
       >
-        <h3>Frontend Engineer</h3>
+        <h3>Frontend Engineer (RoR/JavaScript)</h3>
         <h4><span>Akelius GmbH</span> <em>Berlin</em></h4>
         <ul>
-          <li><p>Designed and kickstarted Single Page Application with React for backend API with Apollo client</p></li>
+          <li><p>Designed and kickstarted Single Page Application with React consuming backend API with GraphQL Apollo client</p></li>
+          <li>Maintain and support legacy RoR application</li>
         </ul>
+        <h5>Tech Stack</h5>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         date="08/2016 - 07/2017"
@@ -42,7 +44,7 @@ export default withSiteData(() => (
         <h4><span>Sharepop</span> <em>Berlin</em></h4>
         <ul>
           <li>
-            <p>Built greenfield product with one teammate.</p>
+            <p>Successfully built and kickstart greenfield product with one teammate.</p>
           </li>
           <li>
             <p>Designed and lead Frontend architecture and UX.</p>
