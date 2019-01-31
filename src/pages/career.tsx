@@ -4,7 +4,6 @@ import { withSiteData } from 'react-static'
 import Icon from '@components/Icon/Icon';
 import IconList from '@components/IconList/IconList';
 import './career.css';
-// import { Link } from '@reach/router'
 
 export default withSiteData(() => (
   <div>
@@ -13,7 +12,7 @@ export default withSiteData(() => (
         date="08/2017 - present"
         icon={<Icon name="svg-briefcase" />}
       >
-        <h3>Frontend Engineer (RoR/JavaScript)</h3>
+        <h3>Software Engineer (RoR/JavaScript)</h3>
         <h4><span>Akelius GmbH</span> <em>Berlin</em></h4>
         <ul>
           <li><p>Designed and kickstarted Single Page Application with React consuming backend API with GraphQL Apollo client</p></li>
@@ -103,7 +102,7 @@ export default withSiteData(() => (
         position={"right"}
       >
         <h3>Full Stack Developer (RoR/JavaScript)</h3>
-        <h4><span>Sofatutor GmbH</span> <em>Berlin</em></h4>
+        <h4><a href="https://sofatutor.de">Sofatutor GmbH</a> <em>Berlin</em></h4>
         <ul>
           <li>
             <p>Built new workflow for Admin Panel to serve as support for Video Production team. That involved developing full CRUD interface in Rails application based on a state machine. Also extending roles on authorisation layer.</p>
@@ -169,7 +168,7 @@ export default withSiteData(() => (
         icon={<Icon name="svg-briefcase" />}
       >
         <h3>Full Stack Developer (RoR)</h3>
-        <h4><span>Sharepop</span> <em>Berlin</em></h4>
+        <h4><a href="https://www.hisharethat.com/">Sharepop (hi! share that)</a> <em>Berlin</em></h4>
         <ul>
           <li>
             <p>Successfully built and kickstart greenfield product with one teammate.</p>
@@ -239,7 +238,7 @@ export default withSiteData(() => (
         position={"right"}
       >
         <h3>Senior Frontend Developer</h3>
-        <h4><span>AppLift (HitFox Group)</span> <em>Berlin</em></h4>
+        <h4><a href="https://www.applift.com/">AppLift GmbH (HitFox Group)</a> <em>Berlin</em></h4>
         <ul>
           <li>
             <p>Implemented (Frontend Layer) and supporting analytic dashboard applications based on Ruby on Rails</p>
@@ -307,7 +306,7 @@ export default withSiteData(() => (
         icon={<Icon name="svg-briefcase" />}
       >
         <h3>User Interface Developer</h3>
-        <h4><span>POSSIBLE</span> <em>Katowice, Poland</em></h4>
+        <h4><a href="https://www.possible.com/">POSSIBLE</a> <em>Katowice, Poland</em></h4>
         <ul>
           <li>
             <p>
@@ -360,6 +359,94 @@ export default withSiteData(() => (
             {
               label: ".NET",
               iconName: 'stack-icons-dotnet',
+              svgName: 'tech-stack',
+            },
+          ]
+        } />
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        date="11/2008 - 11/2010"
+        icon={<Icon name="svg-briefcase" />}
+        position="right"
+      >
+        <h3>Senior Webmaster</h3>
+        <h4><a href="https://getresponse.com">Getresponse</a> <em>Gdynia, Poland</em></h4>
+        <ul>
+          <li>
+            <p>
+              Built complete revamped UI for the platform with all it's existing tools.
+            </p>
+          </li>
+        </ul>
+        <h5>Tech Stack</h5>
+        <IconList data={
+          [
+            {
+              label: "jQuery",
+              iconName: 'stack-icons-jquery',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "JavaScript",
+              iconName: 'stack-icons-javascript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "PHP",
+              iconName: 'stack-icons-php',
+              svgName: 'tech-stack',
+            },
+          ]
+        } />
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        date="11/2007 - 11/2008"
+        icon={<Icon name="svg-briefcase" />}
+      >
+        <h3>Web Developer</h3>
+        <h4><a href="https://engine.pl">Engine</a> <em>Gdynia, Poland</em></h4>
+        <ul>
+          <li>
+            <p>Providing services in Digital Agency workflow with many key clients.
+            Mastered my bread and butter skills of Front End for various demands.</p>
+          </li>
+        </ul>
+        <h5>Tech Stack</h5>
+        <IconList data={
+          [
+            {
+              label: "jQuery",
+              iconName: 'stack-icons-jquery',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "JavaScript",
+              iconName: 'stack-icons-javascript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "PHP",
+              iconName: 'stack-icons-php',
               svgName: 'tech-stack',
             },
           ]
