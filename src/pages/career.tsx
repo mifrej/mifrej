@@ -21,72 +21,81 @@ export default withSiteData(() => (
         </ul>
         <h5>Tech Stack</h5>
         <IconList data={
+
           [
             {
               label: "JavaScript",
               iconName: 'stack-icons-javascript',
               svgName: 'tech-stack',
-            }
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "React",
+              iconName: 'stack-icons-react',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "GraphQL",
+              iconName: 'stack-icons-graphql',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Apollo",
+              iconName: 'stack-icons-apollostack',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "FlowJS",
+              iconName: 'stack-icons-flow',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Jest",
+              iconName: 'stack-icons-jest',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "PostCSS",
+              iconName: 'stack-icons-postcss',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Material UI",
+              iconName: 'stack-icons-material-ui',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Webpack",
+              iconName: 'stack-icons-webpack',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Kubernetes",
+              iconName: 'stack-icons-kubernetes',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Jenkins",
+              iconName: 'stack-icons-jenkins',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Ruby on Rails",
+              iconName: 'stack-icons-rails',
+              svgName: 'tech-stack',
+            },
+
           ]
         } />
-        <ul className="stack-list">
-          <li title="JavaScript">
-            <Icon name="stack-icons-javascript" svgName="tech-stack" />
-            <em className="visuallyhidden">JavaScript</em>
-          </li>
-          <li title="HTML5">
-            <Icon name="stack-icons-html-5" svgName="tech-stack" />
-            <em className="visuallyhidden">HTML5</em>
-          </li>
-          <li title="React">
-            <Icon name="stack-icons-react" svgName="tech-stack" />
-            <em className="visuallyhidden">React</em>
-          </li>
-          <li title="GraphQL">
-            <Icon name="stack-icons-graphql" svgName="tech-stack" />
-            <em className="visuallyhidden">GraphQL</em>
-          </li>
-          <li title="Apollo">
-            <Icon name="stack-icons-apollostack" svgName="tech-stack" />
-            <em className="visuallyhidden">Apollo</em>
-          </li>
-          <li title="FlowJS">
-            <Icon name="stack-icons-flow" svgName="tech-stack" />
-            <em className="visuallyhidden">FlowJS</em>
-          </li>
-          <li title="Jest">
-            <Icon name="stack-icons-jest" svgName="tech-stack" />
-            <em className="visuallyhidden">Jest</em>
-          </li>
-          <li title="CSS3">
-            <Icon name="stack-icons-css-3" svgName="tech-stack" />
-            <em className="visuallyhidden">CSS3</em>
-          </li>
-          <li title="PostCSS">
-            <Icon name="stack-icons-postcss" svgName="tech-stack" />
-            <em className="visuallyhidden">PostCSS</em>
-          </li>
-          <li title="Material UI">
-            <Icon name="stack-icons-material-ui" svgName="tech-stack" />
-            <em className="visuallyhidden">Material UI</em>
-          </li>
-          <li title="Webpack">
-            <Icon name="stack-icons-webpack" svgName="tech-stack" />
-            <em className="visuallyhidden">Webpack</em>
-          </li>
-          <li title="Kubernetes">
-            <Icon name="stack-icons-kubernetes" svgName="tech-stack" />
-            <em className="visuallyhidden">Kubernetes</em>
-          </li>
-          <li title="Jenkins">
-            <Icon name="stack-icons-jenkins" svgName="tech-stack" />
-            <em className="visuallyhidden">Jenkins</em>
-          </li>
-          <li title="Ruby on Rails">
-            <Icon name="stack-icons-rails" svgName="tech-stack" />
-            <em className="visuallyhidden">Ruby on Rails</em>
-          </li>
-        </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         date="08/2016 - 07/2017"
@@ -103,6 +112,57 @@ export default withSiteData(() => (
             <p>Built new Instant Search component supported with Thinking Sphinx as a full text search engine layer, and Backbone as a Single Page Application interface</p>
           </li>
         </ul>
+        <h5>Tech Stack</h5>
+        <IconList data={
+          [
+            {
+              label: "Backbone",
+              iconName: 'stack-icons-backbone-icon',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CoffeeScript",
+              iconName: 'stack-icons-coffeescript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "jQuery",
+              iconName: 'stack-icons-jquery',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "JavaScript",
+              iconName: 'stack-icons-javascript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Sass",
+              iconName: 'stack-icons-sass',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Ruby on Rails",
+              iconName: 'stack-icons-rails',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "MySQL",
+              iconName: 'stack-icons-mysql',
+              svgName: 'tech-stack',
+            },
+
+          ]
+        } />
       </VerticalTimelineElement>
       <VerticalTimelineElement
         date="03/2015 - 07/2016"
@@ -121,6 +181,189 @@ export default withSiteData(() => (
             <p>After product stabilisation I developed Full Stack features in RoR</p>
           </li>
         </ul>
+        <h5>Tech Stack</h5>
+        <IconList data={
+          [
+            {
+              label: "CoffeeScript",
+              iconName: 'stack-icons-coffeescript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "jQuery",
+              iconName: 'stack-icons-jquery',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "JavaScript",
+              iconName: 'stack-icons-javascript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Sass",
+              iconName: 'stack-icons-sass',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Zurb Foundation",
+              iconName: 'stack-icons-foundation',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Ruby on Rails",
+              iconName: 'stack-icons-rails',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "MySQL",
+              iconName: 'stack-icons-mysql',
+              svgName: 'tech-stack',
+            },
+
+          ]
+        } />
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        date="11/2013 - 02/2015"
+        icon={<Icon name="svg-briefcase" />}
+        position={"right"}
+      >
+        <h3>Senior Frontend Developer</h3>
+        <h4><span>AppLift (HitFox Group)</span> <em>Berlin</em></h4>
+        <ul>
+          <li>
+            <p>Implemented (Frontend Layer) and supporting analytic dashboard applications based on Ruby on Rails</p>
+          </li>
+        </ul>
+        <h5>Tech Stack</h5>
+        <IconList data={
+          [
+            {
+              label: "CoffeeScript",
+              iconName: 'stack-icons-coffeescript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "jQuery",
+              iconName: 'stack-icons-jquery',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "JavaScript",
+              iconName: 'stack-icons-javascript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Sass",
+              iconName: 'stack-icons-sass',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Zurb Foundation",
+              iconName: 'stack-icons-foundation',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Bootstrap",
+              iconName: 'stack-icons-bootstrap',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Ruby on Rails",
+              iconName: 'stack-icons-rails',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "AWS",
+              iconName: 'stack-icons-aws',
+              svgName: 'tech-stack',
+            },
+
+          ]
+        } />
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        date="10/2010 - 09/2013"
+        icon={<Icon name="svg-briefcase" />}
+      >
+        <h3>User Interface Developer</h3>
+        <h4><span>POSSIBLE</span> <em>Katowice, Poland</em></h4>
+        <ul>
+          <li>
+            <p>
+              Provide Frontend Layer solutions for key clients.
+              Developed solutions were based on Episerver CMS as a backend layer.
+            </p>
+          </li>
+          <li>
+            <p>Examplary shipped services:</p>
+            <ul>
+              <li><a href="http://www.nfumutual.co.uk">http://www.nfumutual.co.uk</a></li>
+              <li><a href="http://www.slh.com">http://www.slh.com</a></li>
+              <li><a href="http://www.aegon.com">http://www.aegon.com</a></li>
+            </ul>
+          </li>
+        </ul>
+        <h5>Tech Stack</h5>
+        <IconList data={
+          [
+            {
+              label: "jQuery",
+              iconName: 'stack-icons-jquery',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "JavaScript",
+              iconName: 'stack-icons-javascript',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5",
+              iconName: 'stack-icons-html-5',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "CSS3",
+              iconName: 'stack-icons-css-3',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "Sass",
+              iconName: 'stack-icons-sass',
+              svgName: 'tech-stack',
+            },
+            {
+              label: "HTML5 Boilerplate",
+              iconName: 'stack-icons-html5-boilerplate',
+              svgName: 'tech-stack',
+            },
+            {
+              label: ".NET",
+              iconName: 'stack-icons-dotnet',
+              svgName: 'tech-stack',
+            },
+          ]
+        } />
       </VerticalTimelineElement>
     </VerticalTimeline>
     <div style={{ clear: 'both' }}>{' '}</div>

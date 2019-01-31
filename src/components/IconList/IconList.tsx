@@ -14,11 +14,11 @@ interface Props {
 
 export default function IconList({ data }: Props) {
   return (
-    <ul>
+    <ul className="icon-list">
       {data.map(element => (
         <li title={element.label}>
           <Icon name={element.iconName}  svgName={element.svgName} />
-          {element.label}
+          <em className="visuallyhidden">{element.label}</em>
         </li>
       ))}
     </ul>

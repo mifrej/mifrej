@@ -30,24 +30,3 @@
     font-size: 1em;
   }
 }
-
-.stack-list {
-  padding: 0;
-  list-style: none;
-  display: inline-flex;
-  flex-wrap: wrap;
-  /* background-color: var(--light-teal);
-  box-shadow: var(--box-shadow-default); */
-  /* border-radius: 1em; */
-
-  & li {
-    padding: 0 0.25em 0.6em;
-    margin: 0;
-  }
-
-  & svg {
-    width: 1.8em;
-    height: 1.8em;
-    filter: drop-shadow(var(--text-shadow-thin));
-  }
-}
