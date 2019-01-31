@@ -3,7 +3,12 @@
 
 .career-timeline {
   & h3 {
-    padding-bottom: 0.2em;
+    padding: 0.5em 0 0.2em 0;
+
+    @media (--tablet) {
+      padding-top: 0;
+    }
+
     border-bottom: 1px solid var(--teal);
   }
 

@@ -35,7 +35,6 @@ address {
     height: 3em;
     fill: var(--light-teal);
     transition: fill var(--transition-default);
-    -webkit-filter: drop-shadow(var(--text-shadow-thin));
     filter: drop-shadow(var(--text-shadow-thin));
   }
 

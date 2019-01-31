@@ -1,0 +1,39 @@
+@import '../../variables.css';
+
+.mf-button {
+  display: flex;
+  padding: 0.8em 1.2em;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: var(--box-shadow-default);
+  background-color: var(--light-teal);
+  transition: background-color var(--transition-default);
+  text-align: center;
+
+  &.mf-button--primary {
+    background-color: var(--brick-red);
+    color: var(--white);
+
+    &:hover,
+    &:active {
+      border-bottom: none;
+      background-color: var(--light-brick-red);
+    }
+  }
+
+  &.mf-button--secondary {
+    color: var(--white);
+    background-color: var(--yellow);
+
+    &:hover,
+    &:active {
+      border-bottom: none;
+      background-color: var(--light-yellow);
+    }
+  }
+
+  &:hover,
+  &:active {
+    border-bottom: none;
+  }
+}
