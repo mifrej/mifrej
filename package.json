@@ -18,6 +18,7 @@
     "react-dom": "^16.8.0-alpha.0",
     "react-hot-loader": "^4.3.12",
     "react-static": "^6.0.18",
+    "react-static-plugin-google-analytics": "^0.0.0",
     "react-vertical-timeline-component": "^2.3.1"
   },
   "devDependencies": {
@@ -37,6 +38,7 @@
     "postcss-preset-env": "^6.5.0",
     "postcss-reporter": "^6.0.1",
     "prettier": "^1.16.1",
+    "react-static-plugin-favicons": "^1.0.0",
     "react-static-plugin-typescript": "^3.1.0",
     "serve": "10.1.1",
     "stylelint": "^9.10.1",

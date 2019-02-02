@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import path from 'path';
 import React from 'react';
-import experiences from './data.json';
 import { Html, Head, Body, children, siteData, renderMeta } from 'react-static';
 
 export default {
@@ -33,5 +32,10 @@ export default {
   plugins: [
     'react-static-plugin-typescript',
     'react-static-plugin-postcss-preset-env',
+    [
+      'react-static-plugin-favicons',
+      { inputFile: path.resolve(__dirname, 'public/milosz-face.svg') },
+    ],
+    ['react-static-plugin-google-analytics', { id: 'UA-2176096-15' }],
   ],
 };
