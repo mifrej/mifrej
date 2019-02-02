@@ -4,7 +4,7 @@ import Button from '@components/Button/Button';
 
 export default withSiteData(() => (
   <section>
-    <h2>Hello! 👋🏻 I'm Miłosz Frejnik</h2>
+    <h2>Hello! 👋🏻 I'm Miłosz{`\u00a0`}Frejnik</h2>
     <h3>I build applications for the web</h3>
     <p>
       I'm a frontend engineer based in Berlin.<br />
@@ -17,7 +17,7 @@ export default withSiteData(() => (
     <p>I care about technical standards and prefer well thought comprehensive solutions over so called temporary hacks</p>
     <h2 className="action-bar">
       <Button secondary url="mailto:milosz@frejnik.com" label="Hire Me!" />
-      <Button primary url="/docs/cv.pdf" label="Download my CV" />
+      <Button primary url="/cv/cv-milosz-frejnik.pdf" label="Download my CV" />
     </h2>
   </section>
 ))
