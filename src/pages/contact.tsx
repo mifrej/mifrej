@@ -40,7 +40,7 @@ export default withSiteData(() => (
           </a>
         </li>
         <li>
-          <a href="#" title="resume">
+          <a href="/cv/cv-milosz-frejnik.pdf" title="resume">
             <Icon name="svg-icon-profile" />
             <em className="visuallyhidden">Resume</em>
           </a>
