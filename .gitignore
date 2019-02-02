@@ -3,3 +3,5 @@ vendor
 tmp
 
 dist/
+
+public/cv/
