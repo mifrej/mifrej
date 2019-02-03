@@ -1,5 +1,5 @@
-import React from 'react';
 import Navigation from '@components/Navigation/Navigation';
+import React from 'react';
 import './footer.css';
 
 export default function Footer() {
@@ -9,5 +9,5 @@ export default function Footer() {
       <h6>Site built with react-static</h6>
       <Navigation />
     </footer>
-  )
+  );
 }

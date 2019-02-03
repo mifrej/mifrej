@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from '@reach/router';
+import MiloszFaceSvg from '@components/MiloszFaceSvg';
 import Navigation from '@components/Navigation/Navigation';
-import MiloszFaceSvg from '@components/MiloszFaceSvg'
+import { Link } from '@reach/router';
+import React from 'react';
 import './header.css';
 
 export default function Header() {
@@ -9,18 +9,18 @@ export default function Header() {
     <header>
       <section>
         <h1>
-          <Link to="/">
+          <Link to='/'>
             <MiloszFaceSvg />
             <span>
-              {`mifrej {`}
-              &nbsp;<em className="css-prop-name">craft</em>:&nbsp;
+              {'mifrej {'}
+              &nbsp;<em className='css-prop-name'>craft</em>:&nbsp;
               <em>frontend-engineer</em>
-              {`; }`}
+              {'; }'}
             </span>
           </Link>
         </h1>
       </section>
       <Navigation />
     </header>
-  )
+  );
 }

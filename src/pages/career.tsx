@@ -1,162 +1,169 @@
-import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { withSiteData } from 'react-static'
+import React from 'react';
+
 import Icon from '@components/Icon/Icon';
 import IconList from '@components/IconList/IconList';
+import { withSiteData } from 'react-static';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import './career.css';
 
 export default withSiteData(() => (
   <div>
-    <VerticalTimeline className={"career-timeline"}>
+    <VerticalTimeline className={'career-timeline'}>
       <VerticalTimelineElement
-        date="08/2017 - present"
-        icon={<Icon name="svg-briefcase" />}
+        date='08/2017 - present'
+        icon={<Icon name='svg-briefcase' />}
       >
         <h3>Software Engineer (RoR/JavaScript)</h3>
         <h4><span>Akelius GmbH</span> <em>Berlin</em></h4>
         <ul>
-          <li><p>Designed and kickstarted Single Page Application with React consuming backend API with GraphQL Apollo client</p></li>
+          <li><p>Designed and kickstarted Single Page Application
+            with React consuming backend API with GraphQL Apollo client</p></li>
           <li>Maintain and support legacy RoR application</li>
         </ul>
         <h5>Tech Stack</h5>
-        <IconList data={
-
+        <IconList
+          data={
           [
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "React",
               iconName: 'stack-icons-react',
+              label: 'React',
               svgName: 'tech-stack',
             },
             {
-              label: "GraphQL",
               iconName: 'stack-icons-graphql',
+              label: 'GraphQL',
               svgName: 'tech-stack',
             },
             {
-              label: "Apollo",
               iconName: 'stack-icons-apollostack',
+              label: 'Apollo',
               svgName: 'tech-stack',
             },
             {
-              label: "FlowJS",
               iconName: 'stack-icons-flow',
+              label: 'FlowJS',
               svgName: 'tech-stack',
             },
             {
-              label: "Jest",
               iconName: 'stack-icons-jest',
+              label: 'Jest',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "PostCSS",
               iconName: 'stack-icons-postcss',
+              label: 'PostCSS',
               svgName: 'tech-stack',
             },
             {
-              label: "Material UI",
               iconName: 'stack-icons-material-ui',
+              label: 'Material UI',
               svgName: 'tech-stack',
             },
             {
-              label: "Webpack",
               iconName: 'stack-icons-webpack',
+              label: 'Webpack',
               svgName: 'tech-stack',
             },
             {
-              label: "Kubernetes",
               iconName: 'stack-icons-kubernetes',
+              label: 'Kubernetes',
               svgName: 'tech-stack',
             },
             {
-              label: "Jenkins",
               iconName: 'stack-icons-jenkins',
+              label: 'Jenkins',
               svgName: 'tech-stack',
             },
             {
-              label: "Ruby on Rails",
               iconName: 'stack-icons-rails',
+              label: 'Ruby on Rails',
               svgName: 'tech-stack',
             },
 
           ]
-        } />
+          }
+        />
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="08/2016 - 07/2017"
-        icon={<Icon name="svg-briefcase" />}
-        position={"right"}
+        date='08/2016 - 07/2017'
+        icon={<Icon name='svg-briefcase' />}
+        position={'right'}
       >
         <h3>Full Stack Developer (RoR/JavaScript)</h3>
-        <h4><a href="https://sofatutor.de">Sofatutor GmbH</a> <em>Berlin</em></h4>
+        <h4><a href='https://sofatutor.de'>Sofatutor GmbH</a> <em>Berlin</em></h4>
         <ul>
           <li>
-            <p>Built new workflow for Admin Panel to serve as support for Video Production team. That involved developing full CRUD interface in Rails application based on a state machine. Also extending roles on authorisation layer.</p>
+            <p>Built new workflow for Admin Panel to serve as support for Video Production team.
+              That involved developing full CRUD interface in Rails application based
+              on a state machine.Also extending roles on authorisation layer.</p>
           </li>
           <li>
-            <p>Built new Instant Search component supported with Thinking Sphinx as a full text search engine layer, and Backbone as a Single Page Application interface</p>
+            <p>Built new Instant Search component supported
+              with Thinking Sphinx as a full text search engine layer,
+              and Backbone as a Single Page Application interface</p>
           </li>
         </ul>
         <h5>Tech Stack</h5>
         <IconList data={
           [
             {
-              label: "Backbone",
               iconName: 'stack-icons-backbone-icon',
+              label: 'Backbone',
               svgName: 'tech-stack',
             },
             {
-              label: "CoffeeScript",
               iconName: 'stack-icons-coffeescript',
+              label: 'CoffeeScript',
               svgName: 'tech-stack',
             },
             {
-              label: "jQuery",
               iconName: 'stack-icons-jquery',
+              label: 'jQuery',
               svgName: 'tech-stack',
             },
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "Sass",
               iconName: 'stack-icons-sass',
+              label: 'Sass',
               svgName: 'tech-stack',
             },
             {
-              label: "Ruby on Rails",
               iconName: 'stack-icons-rails',
+              label: 'Ruby on Rails',
               svgName: 'tech-stack',
             },
             {
-              label: "MySQL",
               iconName: 'stack-icons-mysql',
+              label: 'MySQL',
               svgName: 'tech-stack',
             },
 
@@ -164,11 +171,13 @@ export default withSiteData(() => (
         } />
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="03/2015 - 07/2016"
-        icon={<Icon name="svg-briefcase" />}
+        date='03/2015 - 07/2016'
+        icon={<Icon name='svg-briefcase' />}
       >
         <h3>Full Stack Developer (RoR)</h3>
-        <h4><a href="https://www.hisharethat.com/">Sharepop (hi! share that)</a> <em>Berlin</em></h4>
+        <h4><a href='https://www.hisharethat.com/'>
+          Sharepop (hi! share that)</a> <em>Berlin</em>
+        </h4>
         <ul>
           <li>
             <p>Successfully built and kickstart greenfield product with one teammate.</p>
@@ -184,48 +193,48 @@ export default withSiteData(() => (
         <IconList data={
           [
             {
-              label: "CoffeeScript",
               iconName: 'stack-icons-coffeescript',
+              label: 'CoffeeScript',
               svgName: 'tech-stack',
             },
             {
-              label: "jQuery",
               iconName: 'stack-icons-jquery',
+              label: 'jQuery',
               svgName: 'tech-stack',
             },
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "Sass",
               iconName: 'stack-icons-sass',
+              label: 'Sass',
               svgName: 'tech-stack',
             },
             {
-              label: "Zurb Foundation",
               iconName: 'stack-icons-foundation',
+              label: 'Zurb Foundation',
               svgName: 'tech-stack',
             },
             {
-              label: "Ruby on Rails",
               iconName: 'stack-icons-rails',
+              label: 'Ruby on Rails',
               svgName: 'tech-stack',
             },
             {
-              label: "MySQL",
               iconName: 'stack-icons-mysql',
+              label: 'MySQL',
               svgName: 'tech-stack',
             },
 
@@ -233,68 +242,69 @@ export default withSiteData(() => (
         } />
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="11/2013 - 02/2015"
-        icon={<Icon name="svg-briefcase" />}
-        position={"right"}
+        date='11/2013 - 02/2015'
+        icon={<Icon name='svg-briefcase' />}
+        position={'right'}
       >
         <h3>Senior Frontend Developer</h3>
-        <h4><a href="https://www.applift.com/">AppLift GmbH (HitFox Group)</a> <em>Berlin</em></h4>
+        <h4><a href='https://www.applift.com/'>AppLift GmbH (HitFox Group)</a> <em>Berlin</em></h4>
         <ul>
           <li>
-            <p>Implemented (Frontend Layer) and supporting analytic dashboard applications based on Ruby on Rails</p>
+            <p>Implemented (Frontend Layer) and supporting analytic
+              dashboard applications based on Ruby on Rails</p>
           </li>
         </ul>
         <h5>Tech Stack</h5>
         <IconList data={
           [
             {
-              label: "CoffeeScript",
               iconName: 'stack-icons-coffeescript',
+              label: 'CoffeeScript',
               svgName: 'tech-stack',
             },
             {
-              label: "jQuery",
               iconName: 'stack-icons-jquery',
+              label: 'jQuery',
               svgName: 'tech-stack',
             },
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "Sass",
               iconName: 'stack-icons-sass',
+              label: 'Sass',
               svgName: 'tech-stack',
             },
             {
-              label: "Zurb Foundation",
               iconName: 'stack-icons-foundation',
+              label: 'Zurb Foundation',
               svgName: 'tech-stack',
             },
             {
-              label: "Bootstrap",
               iconName: 'stack-icons-bootstrap',
+              label: 'Bootstrap',
               svgName: 'tech-stack',
             },
             {
-              label: "Ruby on Rails",
               iconName: 'stack-icons-rails',
+              label: 'Ruby on Rails',
               svgName: 'tech-stack',
             },
             {
-              label: "AWS",
               iconName: 'stack-icons-aws',
+              label: 'AWS',
               svgName: 'tech-stack',
             },
 
@@ -302,11 +312,11 @@ export default withSiteData(() => (
         } />
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="10/2010 - 09/2013"
-        icon={<Icon name="svg-briefcase" />}
+        date='10/2010 - 09/2013'
+        icon={<Icon name='svg-briefcase' />}
       >
         <h3>User Interface Developer</h3>
-        <h4><a href="https://www.possible.com/">POSSIBLE</a> <em>Katowice, Poland</em></h4>
+        <h4><a href='https://www.possible.com/'>POSSIBLE</a> <em>Katowice, Poland</em></h4>
         <ul>
           <li>
             <p>
@@ -317,9 +327,9 @@ export default withSiteData(() => (
           <li>
             <p>Examplary shipped services:</p>
             <ul>
-              <li><a href="http://www.nfumutual.co.uk">http://www.nfumutual.co.uk</a></li>
-              <li><a href="http://www.slh.com">http://www.slh.com</a></li>
-              <li><a href="http://www.aegon.com">http://www.aegon.com</a></li>
+              <li><a href='http://www.nfumutual.co.uk'>http://www.nfumutual.co.uk</a></li>
+              <li><a href='http://www.slh.com'>http://www.slh.com</a></li>
+              <li><a href='http://www.aegon.com'>http://www.aegon.com</a></li>
             </ul>
           </li>
         </ul>
@@ -327,50 +337,50 @@ export default withSiteData(() => (
         <IconList data={
           [
             {
-              label: "jQuery",
               iconName: 'stack-icons-jquery',
+              label: 'jQuery',
               svgName: 'tech-stack',
             },
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "Sass",
               iconName: 'stack-icons-sass',
+              label: 'Sass',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5 Boilerplate",
               iconName: 'stack-icons-html5-boilerplate',
+              label: 'HTML5 Boilerplate',
               svgName: 'tech-stack',
             },
             {
-              label: ".NET",
               iconName: 'stack-icons-dotnet',
+              label: '.NET',
               svgName: 'tech-stack',
             },
           ]
         } />
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="11/2008 - 11/2010"
-        icon={<Icon name="svg-briefcase" />}
-        position="right"
+        date='11/2008 - 11/2010'
+        icon={<Icon name='svg-briefcase' />}
+        position='right'
       >
         <h3>Senior Webmaster</h3>
-        <h4><a href="https://getresponse.com">Getresponse</a> <em>Gdynia, Poland</em></h4>
+        <h4><a href='https://getresponse.com'>Getresponse</a> <em>Gdynia, Poland</em></h4>
         <ul>
           <li>
             <p>
@@ -382,39 +392,39 @@ export default withSiteData(() => (
         <IconList data={
           [
             {
-              label: "jQuery",
               iconName: 'stack-icons-jquery',
+              label: 'jQuery',
               svgName: 'tech-stack',
             },
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "PHP",
               iconName: 'stack-icons-php',
+              label: 'PHP',
               svgName: 'tech-stack',
             },
           ]
         } />
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="11/2007 - 11/2008"
-        icon={<Icon name="svg-briefcase" />}
+        date='11/2007 - 11/2008'
+        icon={<Icon name='svg-briefcase' />}
       >
         <h3>Web Developer</h3>
-        <h4><a href="https://engine.pl">Engine</a> <em>Gdynia, Poland</em></h4>
+        <h4><a href='https://engine.pl'>Engine</a> <em>Gdynia, Poland</em></h4>
         <ul>
           <li>
             <p>Providing services in Digital Agency workflow with many key clients.
@@ -425,34 +435,33 @@ export default withSiteData(() => (
         <IconList data={
           [
             {
-              label: "jQuery",
               iconName: 'stack-icons-jquery',
+              label: 'jQuery',
               svgName: 'tech-stack',
             },
             {
-              label: "JavaScript",
               iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
               svgName: 'tech-stack',
             },
             {
-              label: "HTML5",
               iconName: 'stack-icons-html-5',
+              label: 'HTML5',
               svgName: 'tech-stack',
             },
             {
-              label: "CSS3",
               iconName: 'stack-icons-css-3',
+              label: 'CSS3',
               svgName: 'tech-stack',
             },
             {
-              label: "PHP",
               iconName: 'stack-icons-php',
+              label: 'PHP',
               svgName: 'tech-stack',
             },
           ]
         } />
       </VerticalTimelineElement>
     </VerticalTimeline>
-    <div style={{ clear: 'both' }}>{' '}</div>
   </div>
 ));

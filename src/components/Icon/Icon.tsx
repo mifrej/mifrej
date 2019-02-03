@@ -11,5 +11,5 @@ export default function Icon({ name, svgName = 'svg-sprite' }: Icon) {
     <svg className={`svg-icon ${name}--element`}>
       <use xlinkHref={`/img/${svgName}.svg#${name}`} />
     </svg>
-  )
-};
+  );
+}

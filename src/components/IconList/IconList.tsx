@@ -1,26 +1,26 @@
-import React from 'react';
 import Icon from '@components/Icon/Icon';
+import React from 'react';
 import './icon-list.css';
 
-interface ListItem {
-  label: string,
-  iconName: string,
-  svgName?: string
+interface IListItem {
+  label: string;
+  iconName: string;
+  svgName?: string;
 }
 
-interface Props {
-  data: Array<ListItem>
+interface IProps {
+  data: IListItem[];
 }
 
-export default function IconList({ data }: Props) {
+export default function IconList({ data }: IProps) {
   return (
-    <ul className="icon-list">
-      {data.map(element => (
+    <ul className='icon-list'>
+      {data.map((element) => (
         <li title={element.label}>
           <Icon name={element.iconName}  svgName={element.svgName} />
-          <em className="visuallyhidden">{element.label}</em>
+          <em className='visuallyhidden'>{element.label}</em>
         </li>
       ))}
     </ul>
-  )
+  );
 }

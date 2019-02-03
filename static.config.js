@@ -36,6 +36,5 @@ export default {
       'react-static-plugin-favicons',
       { inputFile: path.resolve(__dirname, 'public/milosz-face.svg') },
     ],
-    ['react-static-plugin-google-analytics', { id: 'UA-2176096-15' }],
   ],
 };
