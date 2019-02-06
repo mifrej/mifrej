@@ -14,7 +14,6 @@
     "@reach/router": "^1.2.1",
     "@types/react-router-dom": "^4.3.1",
     "@types/react-vertical-timeline-component": "^2.3.0",
-    "autotrack": "^2.4.1",
     "axios": "^0.18.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.0-alpha.0",
