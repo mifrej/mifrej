@@ -41,4 +41,12 @@ footer {
     text-shadow: none;
     line-break: 1;
   }
+
+  & h6.extra-text {
+    display: none;
+
+    @media (--tablet) {
+      display: initial;
+    }
+  }
 }
