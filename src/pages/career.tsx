@@ -9,14 +9,87 @@ import './career.css';
 export default withSiteData(() => (
   <div>
     <VerticalTimeline className={'career-timeline'}>
-      <VerticalTimelineElement
-        date='08/2017 - present'
+    <VerticalTimelineElement
+        date='08/2019 - present'
         icon={<Icon name='svg-briefcase' />}
       >
-        <h3>Software Engineer (RoR/JavaScript)</h3>
-        <h4><span>Akelius GmbH</span> <em>Berlin</em></h4>
+        <h3>Senior Frontend Engineer (JavaScript)</h3>
+        <h4><span><a href="https://wattsight.com">Wattsight GmbH</a></span> <em>Berlin</em></h4>
         <ul>
-          <li><p>Designed and kickstarted Single Page Application
+          <li><p>Yet to come ...</p></li>
+        </ul>
+        <h5>Tech Stack</h5>
+        <IconList
+          data={
+          [
+            {
+              iconName: 'stack-icons-javascript',
+              label: 'JavaScript',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-html-5',
+              label: 'HTML5',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-react',
+              label: 'React',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-graphql',
+              label: 'GraphQL',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-apollostack',
+              label: 'Apollo',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-jest',
+              label: 'Jest',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-css-3',
+              label: 'CSS3',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-postcss',
+              label: 'PostCSS',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-material-ui',
+              label: 'Material UI',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-webpack',
+              label: 'Webpack',
+              svgName: 'tech-stack',
+            },
+            {
+              iconName: 'stack-icons-kubernetes',
+              label: 'Kubernetes',
+              svgName: 'tech-stack',
+            },
+          ]
+          }
+        />
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        date='08/2017 - 07/2019'
+        icon={<Icon name='svg-briefcase' />}
+        position={'right'}
+      >
+        <h3>Software Engineer (JavaScript/RoR)</h3>
+        <h4><span><a href="https://akelius.com">Akelius GmbH</a></span> <em>Berlin</em></h4>
+        <ul>
+          <li><p>Designed and kickstarted Single Page Application projects
             with React consuming backend API with GraphQL Apollo client</p></li>
           <li>Maintain and support legacy RoR application</li>
         </ul>
@@ -102,9 +175,8 @@ export default withSiteData(() => (
       <VerticalTimelineElement
         date='08/2016 - 07/2017'
         icon={<Icon name='svg-briefcase' />}
-        position={'right'}
       >
-        <h3>Full Stack Developer (RoR/JavaScript)</h3>
+        <h3>Full Stack Developer (JavaScript/RoR)</h3>
         <h4><a href='https://sofatutor.de'>Sofatutor GmbH</a> <em>Berlin</em></h4>
         <ul>
           <li>
@@ -173,6 +245,7 @@ export default withSiteData(() => (
       <VerticalTimelineElement
         date='03/2015 - 07/2016'
         icon={<Icon name='svg-briefcase' />}
+        position={'right'}
       >
         <h3>Full Stack Developer (RoR)</h3>
         <h4><a href='https://www.hisharethat.com/'>
@@ -244,7 +317,6 @@ export default withSiteData(() => (
       <VerticalTimelineElement
         date='11/2013 - 02/2015'
         icon={<Icon name='svg-briefcase' />}
-        position={'right'}
       >
         <h3>Senior Frontend Developer</h3>
         <h4><a href='https://www.applift.com/'>AppLift GmbH (HitFox Group)</a> <em>Berlin</em></h4>
@@ -314,6 +386,7 @@ export default withSiteData(() => (
       <VerticalTimelineElement
         date='10/2010 - 09/2013'
         icon={<Icon name='svg-briefcase' />}
+        position={'right'}
       >
         <h3>User Interface Developer</h3>
         <h4><a href='https://www.possible.com/'>POSSIBLE</a> <em>Katowice, Poland</em></h4>
@@ -377,7 +450,6 @@ export default withSiteData(() => (
       <VerticalTimelineElement
         date='11/2008 - 11/2010'
         icon={<Icon name='svg-briefcase' />}
-        position='right'
       >
         <h3>Senior Webmaster</h3>
         <h4><a href='https://getresponse.com'>Getresponse</a> <em>Gdynia, Poland</em></h4>
@@ -422,6 +494,7 @@ export default withSiteData(() => (
       <VerticalTimelineElement
         date='11/2007 - 11/2008'
         icon={<Icon name='svg-briefcase' />}
+        position='right'
       >
         <h3>Web Developer</h3>
         <h4><a href='https://engine.pl'>Engine</a> <em>Gdynia, Poland</em></h4>

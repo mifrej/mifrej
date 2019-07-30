@@ -11,7 +11,7 @@ export default withSiteData(() => (
       I write clean, elegant and efficient code.
     </p>
     <p>My current weapon of choice is <em>React</em> and related ecosystem.</p>
-    <p>I have a profound understanding of <em>Component Driven Architecture</em>
+    <p>I have a profound understanding of <em>Component Driven Architecture </em>
     with the proper separation of concerns in it.</p>
     <p>I'm strong proponent of open web standards,
       thus my current autodidactic interests are targeted at Web Components
@@ -20,6 +20,7 @@ export default withSiteData(() => (
       over my work and my teammates share similar enthusiasm with me.</p>
     <p>I care about technical standards and prefer
       well thought comprehensive solutions over so called temporary hacks</p>
+    <p>In currently very complicated world of many technologies in hand i try to implement new motto <strong>Good Enough</strong>!</p>
     <h2 className='action-bar'>
       <Button secondary={true} url='mailto:milosz@frejnik.com' label='Hire Me!' />
       <Button primary={true} url='/cv/cv-milosz-frejnik.pdf' label='Download my CV' />
