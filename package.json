@@ -18,7 +18,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.3.12",
+    "react-hot-loader": "^4.12.11",
     "react-static": "^6.0.18",
     "react-vertical-timeline-component": "^2.3.1",
     "typescript": "^3.3.1"
