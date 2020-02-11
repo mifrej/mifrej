@@ -1,7 +1,23 @@
+# build output
+dist
+.next
+out/
+
+# dependencies
 node_modules
-vendor
-tmp
 
-dist/
+# logs & pids
+*.log
+pids
+.history
 
-public/cv/
+# coverage
+coverage
+
+# artifacts
+.DS_Store
+.vscode
+.history
+
+# no env vars in repository
+.env

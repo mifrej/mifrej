@@ -1,23 +1,68 @@
 module.exports = {
-  extends: ["eslint-config-airbnb", "prettier"],
   env: {
     browser: true,
     jest: true,
+    node: true,
   },
-  parser: "babel-eslint",
-  plugins: ["json", "prettier"],
-  rules: {
-    "prettier/prettier": "error",
-  },
-  settings: {
-    "import/resolver": {
-      webpack: {
-        config: {
-          resolve: {
-            modules: ["node_modules"],
-          },
-        },
-      },
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'plugin:import/typescript',
+    'plugin:prettier/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
+    ecmaVersion: 2018,
+    extraFileExtensions: ['.js', '.json'],
+    project: './tsconfig.eslint.json',
+    sourceType: 'module',
+    tsconfigRootDir: './',
+  },
+  plugins: ['@typescript-eslint', 'fp', 'json'],
+  // First argument for rules - 0 - off, 1 - warn, 2 - error
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': [0],
+    complexity: [1, 5],
+    'fp/no-let': [1],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+    'import/no-extraneous-dependencies': [1, { devDependencies: true }],
+    'import/prefer-default-export': [0],
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        controlComponents: ['CustomInput'],
+        depth: 3,
+        labelAttributes: ['label'],
+        labelComponents: ['CustomInputLabel'],
+      },
+    ],
+    'max-depth': [1, 3],
+    'max-lines': [1, 300],
+    'max-lines-per-function': [1, 80],
+    'max-nested-callbacks': [1, 4],
+    'no-return-assign': [1, 'except-parens'],
+    'no-undef-init': [2],
+    'no-undefined': [2],
+    'react/jsx-curly-newline': [0],
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+    'react/jsx-one-expression-per-line': [0],
+    'react/jsx-wrap-multilines': [0],
+    'react/react-in-jsx-scope': [0],
+    'sort-keys': [2],
   },
 };

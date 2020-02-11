@@ -1,0 +1,13 @@
+{
+  // extend your base config so you don't have to redefine your compilerOptions
+  // https://github.com/typescript-eslint/typescript-eslint/issues/890
+  "extends": "./tsconfig.json",
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    ".eslintrc.js",
+    "**/*.json"
+  ]
+}

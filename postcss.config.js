@@ -1,22 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable global-require */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const imports = require('./src/theme/imports');
+
 module.exports = {
-  plugins: [
-    require('postcss-import')({
-      plugins: [
-        require('stylelint')({
-          /* custom options */
-        }),
-      ],
-    }),
-    require('postcss-flexbugs-fixes'),
-    require('postcss-preset-env')({
-      autoprefixer: {
-        flexbox: 'no-2009',
-      },
-      importFrom: 'src/variables.css',
-      stage: 0,
-    }),
-    require('postcss-reporter')({ clearReportedMessages: true }),
-  ],
+  plugins: {
+    'postcss-normalize': {},
+    'postcss-preset-env': {
+      importFrom: imports,
+      preserve: false,
+      stage: 1,
+    },
+  },
 };

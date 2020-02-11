@@ -1,0 +1,9 @@
+!.eslintrc.js
+
+# build output
+dist
+.next
+out/
+
+# coverage
+coverage
